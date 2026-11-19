@@ -1,0 +1,1 @@
+import{T as o}from"./TaskList-CSsDPfxy.js";import{b as r,c as t}from"./index-Zx-b_PrK.js";import"./QueryForm-BMlSR5Ac.js";import"./ProTable-BiFogPZG.js";import"./wf-B_qf5IRX.js";import"./labels-DA9DFA62.js";import"./PageGuide-CuoKXea-.js";const f={__name:"done",setup(e){return(m,p)=>(r(),t(o,{mode:"done"}))}};export{f as default};

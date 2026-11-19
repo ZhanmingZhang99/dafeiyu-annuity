@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>大肥鱼的年金云</title>
+<meta name="theme-color" content="#12283d">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="stylesheet" href="./shell.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <span class="logo">TL</span>
+    <div>
+      <div class="title">大肥鱼的年金云</div>
+      <div class="sub">只读影印本 · 数据全部是编的</div>
+    </div>
+  </div>
+  <button id="refresh" class="ghost" type="button">刷新</button>
+</header>
+
+<main>
+
+  <!-- ============ 首页 ============ -->
+  <section id="tab-home" class="tab active">
+    <p class="lead">第一次点进去会要你登录一次（账号 <b>admin</b>，密码 <b>admin123</b>），登进来之后这些卡片就是直达了。这套系统管两件事：<b>信托计划</b>怎么建、怎么投、怎么算净值；<b>企业年金</b>怎么缴、怎么归属、怎么发。下面这几个数字是它的体检表。</p>
+
+    <div class="grid" id="stat-grid">
+      <div class="card stat" data-k="plans"><div class="k">在营产品</div><div class="v">—</div><div class="f"></div></div>
+      <div class="card stat" data-k="entPlans"><div class="k">生效企业计划</div><div class="v">—</div><div class="f"></div></div>
+      <div class="card stat" data-k="persons"><div class="k">在册人数</div><div class="v">—</div><div class="f"></div></div>
+      <div class="card stat" data-k="balance"><div class="k">账户总余额</div><div class="v">—</div><div class="f">含停用户</div></div>
+      <div class="card stat" data-k="unpaid"><div class="k">应缴未缴</div><div class="v">—</div><div class="f">口径：未过账单据</div></div>
+      <div class="card stat" data-k="recon"><div class="k">对账</div><div class="v">—</div><div class="f"></div></div>
+    </div>
+
+    <a class="card entry" href="./app/#/plans">
+      <div class="entry-t">进产品台账看看</div>
+      <div class="entry-d">从投资组合到产品成立、到变更与终止，产品这条线全在这儿。</div>
+      <div class="entry-a">打开 →</div>
+    </a>
+    <a class="card entry" href="./app/#/ent-plans">
+      <div class="entry-t">进企业年金看看</div>
+      <div class="entry-d">企业建档、员工入册、每月应缴、离职带走多少，一条链。</div>
+      <div class="entry-a">打开 →</div>
+    </a>
+  </section>
+
+  <!-- ============ 计划 ============ -->
+  <section id="tab-plans" class="tab">
+    <p class="lead">产品台账。点一张卡进详情，能看到它绑了哪个投资组合、有没有成立通知单、审批走到哪儿。</p>
+    <div id="plan-list" class="list"><p class="empty">正在读数据…</p></div>
+  </section>
+
+  <!-- ============ 年金 ============ -->
+  <section id="tab-annuity" class="tab">
+    <p class="lead">企业年金。一家企业一个计划，计划下面挂着人，人下面挂着账户。</p>
+    <div id="ent-list" class="list"><p class="empty">正在读数据…</p></div>
+  </section>
+
+  <!-- ============ 我的 ============ -->
+  <section id="tab-me" class="tab">
+    <div class="card">
+      <div class="entry-t">这是什么</div>
+      <div class="entry-d">一个真实系统的<b>只读影印本</b>。页面、按钮、数据都是真的，但数据是编的，改了也不会保存。想自己动手，得在本机把后端和数据库跑起来。</div>
+    </div>
+    <a class="card entry" id="dl-manual" href="./assets/操作说明书.docx" download>
+      <div class="entry-t">下载操作说明书</div>
+      <div class="entry-d">140 页，60 张截图，按业务流程排的。要照着系统干活的人看这本。</div>
+      <div class="entry-a">下载 →</div>
+    </a>
+    <a class="card entry" href="./app/">
+      <div class="entry-t">进完整系统（电脑上看更好）</div>
+      <div class="entry-d">左侧是完整菜单，33 个页面都能点。手机上是横向布局，会有点挤。</div>
+      <div class="entry-a">打开 →</div>
+    </a>
+    <div class="card">
+      <div class="entry-t">只读是什么意思</div>
+      <div class="entry-d">保存、提交、复核这些动作会明确告诉你「这是只读影印本，演示站不保存任何改动」。不会假装成功，也不会改你的浏览器里的任何东西。</div>
+    </div>
+    <div class="card">
+      <div class="entry-t">第一次进来要登录一次</div>
+      <div class="entry-d">账号 <b>admin</b>，密码 <b>admin123</b>。登录走的是磁带里录好的那次，不需要任何后端；登完之后 token 存在你自己的浏览器里，下次点卡片直接进去。</div>
+    </div>
+    <p class="foot">数据快照：<span id="tape-date">—</span> · 页面 <span id="tape-pages">—</span> 个</p>
+  </section>
+
+</main>
+
+<nav class="tabs">
+  <button class="tab-btn active" data-tab="home" type="button"><span>首页</span></button>
+  <button class="tab-btn" data-tab="plans" type="button"><span>计划</span></button>
+  <button class="tab-btn" data-tab="annuity" type="button"><span>年金</span></button>
+  <button class="tab-btn" data-tab="me" type="button"><span>我的</span></button>
+</nav>
+
+<script src="./shell.js"></script>
+</body>
+</html>

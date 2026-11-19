@@ -1,0 +1,17 @@
+# Cloudflare Pages 的响应头规则（构建时随壳一起复制到站点根目录）
+# 语法：一行路径，下面一行起是缩进的响应头。
+
+# 磁带每次打开都应该是新的（重录后立刻生效，不被边缘缓存住）
+/app/tape/tape.json
+  Cache-Control: public, max-age=60
+
+# 放映机与壳的脚本可以缓存久一点，但改名（版本号）要能失效
+/app/demo-player.js
+  Cache-Control: public, max-age=3600
+
+/manifest.webmanifest
+  Content-Type: application/manifest+json
+
+# 说明书体积大，允许长缓存
+/assets/*
+  Cache-Control: public, max-age=604800

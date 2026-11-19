@@ -1,0 +1,1 @@
+import{I as e,O as i}from"./index-Zx-b_PrK.js";function n(t,a=1,r=20){return i("/api/parties/page",t,a,r)}function s(t){return e(`/api/parties/${t}`)}function u(t){return e("/api/parties",{method:"POST",body:t})}function o(t,a){return e(`/api/parties/${t}`,{method:"PUT",body:a})}function d(t){return e(`/api/parties/${t}`,{method:"DELETE"})}export{u as c,d,s as g,n as p,o as u};

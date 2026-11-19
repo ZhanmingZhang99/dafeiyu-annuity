@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>这是怎么做的 · 大肥鱼的年金云</title>
+<style>
+  :root{
+    --bg:#0f1a2b; --card:#182c42; --card2:#1d3350; --line:rgba(255,255,255,.08);
+    --fg:#e8f1fb; --dim:#9fb3cc; --accent:#409eff; --ok:#46d68a; --warn:#f0b429;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font:16px/1.7 system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+       padding:0 0 40px}
+  header{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:10px;
+         padding:12px 16px;background:rgba(15,26,43,.92);backdrop-filter:blur(8px);
+         border-bottom:1px solid var(--line)}
+  header .logo{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#5ab0ff,#2b6fd6);
+         display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;color:#fff}
+  header h1{font-size:16px;margin:0;font-weight:600}
+  header .back{margin-left:auto;font-size:14px;color:var(--dim);text-decoration:none;
+         border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+  main{max-width:720px;margin:0 auto;padding:18px 16px}
+  .lead{color:var(--dim);font-size:15px;margin:0 0 18px}
+  .lead b{color:var(--fg)}
+  section{background:var(--card);border:1px solid var(--line);border-radius:14px;
+          padding:16px 16px 6px;margin:0 0 14px}
+  section h2{font-size:16px;margin:0 0 10px;display:flex;align-items:center;gap:8px}
+  section h2 .n{width:22px;height:22px;border-radius:7px;background:rgba(64,158,255,.18);
+          color:#8cc4ff;font-size:12px;display:flex;align-items:center;justify-content:center}
+  p{margin:0 0 12px;color:#d6e3f2}
+  .muted{color:var(--dim);font-size:14px}
+  ol{margin:0 0 12px;padding-left:20px;color:#d6e3f2}
+  ol li{margin:0 0 8px}
+  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 0 14px}
+  .stat{background:var(--card2);border-radius:12px;padding:12px}
+  .stat b{display:block;font-size:22px;line-height:1.2}
+  .stat span{font-size:12px;color:var(--dim)}
+  .two{display:grid;grid-template-columns:1fr;gap:10px;margin:0 0 14px}
+  @media(min-width:560px){.two{grid-template-columns:1fr 1fr}.stats{grid-template-columns:repeat(4,1fr)}}
+  .box{background:var(--card2);border-radius:12px;padding:12px 14px}
+  .box h3{font-size:14px;margin:0 0 8px}
+  .box.real h3{color:var(--ok)}
+  .box.fake h3{color:var(--warn)}
+  .box ul{margin:0;padding-left:18px;font-size:14px;color:#cfdcec}
+  .box li{margin:0 0 6px}
+  .flow{display:flex;flex-direction:column;gap:8px;margin:0 0 14px}
+  .step{display:flex;gap:10px;align-items:flex-start;background:var(--card2);border-radius:12px;padding:10px 12px}
+  .step .i{flex:0 0 22px;height:22px;border-radius:50%;background:rgba(64,158,255,.2);color:#8cc4ff;
+           font-size:12px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+  .step p{margin:0;font-size:14px;color:#cfdcec}
+  code{background:rgba(255,255,255,.07);padding:1px 6px;border-radius:5px;font-size:13px}
+  footer{max-width:720px;margin:0 auto;padding:0 16px;color:var(--dim);font-size:13px}
+  footer a{color:#8cc4ff}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">TL</div>
+  <h1>这是怎么做的</h1>
+  <a class="back" href="./">回首页</a>
+</header>
+
+<main>
+  <p class="lead">你刚点的那套东西，<b>不是真系统</b>——它是一个只有一张「录音」的网站。
+    页面、按钮、数字都是真的，但它背后没有服务器，也不会存下你做的任何改动。这一页讲它是怎么做出来的。</p>
+
+  <div class="stats">
+    <div class="stat"><b>68</b><span>张数据库表</span></div>
+    <div class="stat"><b>37</b><span>个页面</span></div>
+    <div class="stat"><b>145</b><span>条接口录音</span></div>
+    <div class="stat"><b>140</b><span>页说明书</span></div>
+  </div>
+
+  <section>
+    <h2><span class="n">1</span>先说清楚：这里什么是真的</h2>
+    <div class="two">
+      <div class="box real">
+        <h3>真的</h3>
+        <ul>
+          <li>业务逻辑：钱怎么算、归属怎么划、审批怎么走，都是照着一套真系统写的</li>
+          <li>数据：账户、流水、计划、员工，全是从那套真系统里导出来的（名字改过）</li>
+          <li>页面：按钮点下去真会跳、表格真会翻页、表单真会校验</li>
+          <li>说明书那 140 页，是照着这套东西一步步点着写出来的</li>
+        </ul>
+      </div>
+      <div class="box fake">
+        <h3>假的</h3>
+        <ul>
+          <li>没有后端：所有接口返回都是提前录好的固定内容</li>
+          <li>不保存：你新建、修改、提交，一律被拦下并告诉你「这是影印本」</li>
+          <li>不会算：页面上的数都是录下来的那一刻的值</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>做它的三步</h2>
+    <div class="flow">
+      <div class="step"><div class="i">1</div><p><b>先把真系统跑起来。</b>本地装一个数据库，把业务代码跑在上面，能登录、能建计划、能生成应缴单、能算归属——这一步是真的在算钱。</p></div>
+      <div class="step"><div class="i">2</div><p><b>把每个页面点一遍，顺手把接口的应答录下来。</b>用的是浏览器自带的「旁听」能力：页面发什么请求，就把返回内容存一份。一共录了 38 个页面、145 条应答。</p></div>
+      <div class="step"><div class="i">3</div><p><b>上线时把后端彻底撤掉。</b>页面照样发请求，但请求被一层很小的脚本接住，从录音里取答案回给它。取不到的，就老实说「这一段没录到」。</p></div>
+    </div>
+    <p class="muted">所以它跑在任何静态托管上——一个文件夹、8 MB，没有服务器、没有数据库、没有账号系统。</p>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span>为什么不用真后端</h2>
+    <p>因为这是给人看的，不是给人用的。真后端要一台机器、一个数据库、一个能一直开着的进程；而想让人在手机上三秒打开，最省事的办法就是把「用过的那一遍」冻成一张照片。</p>
+    <p>代价也说清楚：你做得再对，它也不会记住。想真动手，得在本机把那套后端和数据库跑起来。</p>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>几个做的时候踩到的坑</h2>
+    <ol>
+      <li><b>「点一下就像刷新」</b>：目录抽屉原本在点到任何菜单标题时就关掉了，看着像页面重载。后来改成只有点到最底层页面才关。</li>
+      <li><b>卡片被挤窄</b>：表格在手机上被一个「按内容收缩」的容器包住，只肯给 289 像素。改成占满之后，字段才不再折行。</li>
+      <li><b>名字漏了</b>：录第一遍时，页面上还留着真实的单位和经办人姓名。发现的办法是拿一串词去扫录音，扫出来一处改一处，最后扫到 0。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span>如果用一句话概括</h2>
+    <p>把一个能真的跑起来的系统，拍成一张可以在手机上随便点的照片；照片是真的，但它不会因为你的动作而改变。</p>
+    <p class="muted">这套东西的技术栈：原生 Vue 3 做界面，Java 做后端，DB2 做数据库，全都在一台电脑上，不联网。</p>
+  </section>
+</main>
+
+<footer>
+  <p>想自己动手：把后端和数据库在本机跑起来，改哪一笔都是真的。这一页只解释「你眼前这个网站是怎么来的」。</p>
+</footer>
+</body>
+</html>

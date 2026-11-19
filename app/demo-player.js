@@ -43,8 +43,10 @@
     var st = document.createElement('style')
     var phoneCssLines = [
       '@media (max-width:899px){',
-      '  .aside{position:fixed!important;left:0;top:0;bottom:0;z-index:60;transform:translateX(-100%);transition:transform .18s ease;box-shadow:2px 0 12px rgba(0,0,0,.35)}',
-      '  body.__menu-open .aside{transform:none}',
+      '  .aside{position:fixed!important;left:0;top:0;bottom:0;width:78vw!important;z-index:60;transform:translateX(-100%);transition:transform .18s ease;box-shadow:2px 0 12px rgba(0,0,0,.35)}',
+      '  body.__menu-open .aside{transform:none;z-index:1201}',
+      '  #__menu_backdrop{position:fixed;inset:0;background:rgba(0,0,0,.38);z-index:1200;display:none}',
+      '  body.__menu-open #__menu_backdrop{display:block}',
       '  .el-main{padding:10px!important;overflow-x:auto}',
       '  .header .el-breadcrumb{display:none!important}',
       '  .header .header-right .el-tag{display:none!important}',
@@ -132,10 +134,14 @@
         document.body.classList.toggle('__menu-open')
       }
     }, true)
+    var bd = document.createElement('div')
+    bd.id = '__menu_backdrop'
+    bd.onclick = function () { document.body.classList.remove('__menu-open') }
+    document.body.appendChild(bd)
     document.body.appendChild(b)
     document.addEventListener('click', function (e) {
       if (!document.body.classList.contains('__menu-open')) return
-      var a = e.target && e.target.closest ? e.target.closest('.el-menu-item, .el-sub-menu__title, .aside a') : null
+      var a = e.target && e.target.closest ? e.target.closest('.el-menu-item, .menu-item, a[data-path]') : null
       if (a) document.body.classList.remove('__menu-open')
     }, true)
   }

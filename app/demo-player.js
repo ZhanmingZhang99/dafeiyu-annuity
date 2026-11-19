@@ -13,6 +13,23 @@
 (function () {
   'use strict'
 
+  // 演示站不设门槛：在应用启动之前，把会话直接写进 localStorage。
+  // 键名与 trust-lite/web/src/stores/user.js 保持一致（trust-lite.token / trust-lite.user）。
+  // 这一步必须在业务代码之前跑——本文件注入在 <head>，业务 bundle 是 module，天然排在后面。
+  try {
+    if (!localStorage.getItem('trust-lite.token')) {
+      localStorage.setItem('trust-lite.token', 'demo-token-readonly')
+      localStorage.setItem('trust-lite.user', JSON.stringify({
+        userId: 1,
+        username: 'admin',
+        displayName: '系统管理员',
+        roles: ['ADMIN']
+      }))
+    }
+  } catch (e) {
+    // 隐私模式下 localStorage 可能不可写，那就让它走登录页，不因此报错
+  }
+
   var TAPE_URL = './tape/tape.json'
   var tape = { entries: [], routes: [] }
   var ready = null
@@ -231,6 +248,23 @@
           message: '这是只读影印本，演示站不保存任何改动；想自己动手请在本机跑真系统。',
           data: null,
           traceId: 'demo-readonly',
+          errors: null
+        })
+      }
+
+      // 登录接口不依赖磁带：演示站固定认这一组账号（页面上写的就是 admin / admin123）。
+      // 留这条是因为有人可能从别处点进登录页，给他一个确定结果，别撞 30002。
+      if (normalizePath(path) === '/api/auth/login') {
+        hits++
+        window.__demoHits = hits
+        return jsonResponse({
+          code: '0',
+          message: 'ok',
+          data: {
+            token: 'demo-token-readonly',
+            user: { userId: 1, username: 'admin', displayName: '系统管理员', roles: ['ADMIN'] }
+          },
+          traceId: 'demo-login',
           errors: null
         })
       }

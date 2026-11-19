@@ -15415,364 +15415,6 @@
    }
   },
   {
-   "route": "dict",
-   "method": "GET",
-   "path": "/api/dicts",
-   "query": "",
-   "body": null,
-   "status": 200,
-   "json": {
-    "code": "0",
-    "message": "ok",
-    "data": [
-     {
-      "dictId": 31,
-      "dictCode": "ACCT_TRANSFER_TYPE",
-      "dictName": "账户划转类型",
-      "status": 1,
-      "remark": "T_ACCOUNT_TRANSFER.TRANSFER_TYPE",
-      "itemCount": 3
-     },
-     {
-      "dictId": 18,
-      "dictCode": "BANK_FLOW_STATUS",
-      "dictName": "网银流水匹配状态",
-      "status": 1,
-      "remark": "MS6-3",
-      "itemCount": 3
-     },
-     {
-      "dictId": 19,
-      "dictCode": "BANK_MATCH_MODE",
-      "dictName": "流水匹配方式",
-      "status": 1,
-      "remark": "MS6-3",
-      "itemCount": 2
-     },
-     {
-      "dictId": 26,
-      "dictCode": "BATCH_JOB_STATUS",
-      "dictName": "日终任务状态",
-      "status": 1,
-      "remark": "T_BATCH_JOB.JOB_STATUS",
-      "itemCount": 6
-     },
-     {
-      "dictId": 27,
-      "dictCode": "BATCH_STEP_STATUS",
-      "dictName": "日终步骤状态",
-      "status": 1,
-      "remark": "T_BATCH_STEP.STEP_STATUS",
-      "itemCount": 6
-     },
-     {
-      "dictId": 28,
-      "dictCode": "BATCH_TRIGGER",
-      "dictName": "日终触发方式",
-      "status": 1,
-      "remark": "T_BATCH_JOB.TRIGGER_BY",
-      "itemCount": 2
-     },
-     {
-      "dictId": 2,
-      "dictCode": "BIZ_STATUS",
-      "dictName": "单据状态",
-      "status": 1,
-      "remark": "计划/单据共用的业务状态",
-      "itemCount": 5
-     },
-     {
-      "dictId": 12,
-      "dictCode": "CYCLE_TYPE",
-      "dictName": "测算周期",
-      "status": 1,
-      "remark": "",
-      "itemCount": 5
-     },
-     {
-      "dictId": 6,
-      "dictCode": "DAY_TYPE",
-      "dictName": "日历日类型",
-      "status": 1,
-      "remark": "1 工作日 2 周末 3 法定节假日",
-      "itemCount": 3
-     },
-     {
-      "dictId": 7,
-      "dictCode": "ENT_PLAN_STATUS",
-      "dictName": "企业计划状态",
-      "status": 1,
-      "remark": "F011:379-384 六态",
-      "itemCount": 6
-     },
-     {
-      "dictId": 5,
-      "dictCode": "ENT_PLAN_TYPE",
-      "dictName": "企业计划类型",
-      "status": 1,
-      "remark": "1 正常 2 保留 3 统筹",
-      "itemCount": 3
-     },
-     {
-      "dictId": 35,
-      "dictCode": "FUND_TRANSFER_STATUS",
-      "dictName": "资金调拨状态",
-      "status": 1,
-      "remark": "MS12-5 状态机；4/5 不产出",
-      "itemCount": 5
-     },
-     {
-      "dictId": 34,
-      "dictCode": "FUND_TRANSFER_TYPE",
-      "dictName": "资金调拨类型",
-      "status": 1,
-      "remark": "MS12-5 调拨单类型",
-      "itemCount": 2
-     },
-     {
-      "dictId": 11,
-      "dictCode": "OVERPAY_MODE",
-      "dictName": "超缴处理方式",
-      "status": 1,
-      "remark": "",
-      "itemCount": 4
-     },
-     {
-      "dictId": 14,
-      "dictCode": "PAY_APPLY_STATUS",
-      "dictName": "缴费申请业务状态",
-      "status": 1,
-      "remark": "",
-      "itemCount": 4
-     },
-     {
-      "dictId": 13,
-      "dictCode": "PAY_BILL_TYPE",
-      "dictName": "账单类别",
-      "status": 1,
-      "remark": "缴费申请",
-      "itemCount": 3
-     },
-     {
-      "dictId": 25,
-      "dictCode": "PAY_INSTALL_STATUS",
-      "dictName": "分期领取状态",
-      "status": 1,
-      "remark": "MS9-1",
-      "itemCount": 3
-     },
-     {
-      "dictId": 16,
-      "dictCode": "PAY_MATCH_STATUS",
-      "dictName": "缴费匹配状态",
-      "status": 1,
-      "remark": "MS6-3 使用",
-      "itemCount": 5
-     },
-     {
-      "dictId": 24,
-      "dictCode": "PAY_MODE",
-      "dictName": "领取方式",
-      "status": 1,
-      "remark": "MS9-1",
-      "itemCount": 3
-     },
-     {
-      "dictId": 17,
-      "dictCode": "PAY_PERSON_STATUS",
-      "dictName": "个人缴费状态",
-      "status": 1,
-      "remark": "",
-      "itemCount": 2
-     },
-     {
-      "dictId": 21,
-      "dictCode": "PAY_REASON",
-      "dictName": "支付原因（待遇支付）",
-      "status": 1,
-      "remark": "MS6-5",
-      "itemCount": 5
-     },
-     {
-      "dictId": 22,
-      "dictCode": "PAY_REQ_STATUS",
-      "dictName": "待遇支付申请状态",
-      "status": 1,
-      "remark": "MS6-5",
-      "itemCount": 5
-     },
-     {
-      "dictId": 15,
-      "dictCode": "PAY_TAX_STATUS",
-      "dictName": "缴费税收状态",
-      "status": 1,
-      "remark": "",
-      "itemCount": 4
-     },
-     {
-      "dictId": 10,
-      "dictCode": "PAY_TYPE",
-      "dictName": "缴费类型",
-      "status": 1,
-      "remark": "企业计划缴费规则",
-      "itemCount": 2
-     },
-     {
-      "dictId": 20,
-      "dictCode": "PAY_TYPE_REQ",
-      "dictName": "支付类型（待遇支付）",
-      "status": 1,
-      "remark": "MS6-5",
-      "itemCount": 3
-     },
-     {
-      "dictId": 8,
-      "dictCode": "PERSON_PLAN_STATUS",
-      "dictName": "个人计划状态",
-      "status": 1,
-      "remark": "F011:4344-4351 八态",
-      "itemCount": 8
-     },
-     {
-      "dictId": 9,
-      "dictCode": "PLAN_CATEGORY",
-      "dictName": "计划类别",
-      "status": 1,
-      "remark": "F011:4454-4458",
-      "itemCount": 2
-     },
-     {
-      "dictId": 1,
-      "dictCode": "PLAN_TYPE",
-      "dictName": "计划类型",
-      "status": 1,
-      "remark": "产品台账 PLAN_TYPE 枚举",
-      "itemCount": 3
-     },
-     {
-      "dictId": 33,
-      "dictCode": "PORTFOLIO_STATUS",
-      "dictName": "投资组合状态",
-      "status": 1,
-      "remark": "T_PORTFOLIO.STATUS",
-      "itemCount": 3
-     },
-     {
-      "dictId": 32,
-      "dictCode": "PORTFOLIO_TYPE",
-      "dictName": "投资组合类型",
-      "status": 1,
-      "remark": "T_PORTFOLIO.PORTFOLIO_TYPE",
-      "itemCount": 2
-     },
-     {
-      "dictId": 30,
-      "dictCode": "REMIND_STATUS",
-      "dictName": "提醒读取状态",
-      "status": 1,
-      "remark": "T_REMIND.STATUS",
-      "itemCount": 2
-     },
-     {
-      "dictId": 29,
-      "dictCode": "REMIND_TRIGGER_TYPE",
-      "dictName": "提醒触发类型",
-      "status": 1,
-      "remark": "T_REMIND_RULE.TRIGGER_TYPE",
-      "itemCount": 4
-     },
-     {
-      "dictId": 37,
-      "dictCode": "SEAL_BIZ_TYPE",
-      "dictName": "印鉴业务类型",
-      "status": 1,
-      "remark": "MS12-6 离职/支付",
-      "itemCount": 2
-     },
-     {
-      "dictId": 36,
-      "dictCode": "SEAL_OWNER_TYPE",
-      "dictName": "印鉴主体类型",
-      "status": 1,
-      "remark": "MS12-6 印鉴管理",
-      "itemCount": 2
-     },
-     {
-      "dictId": 3,
-      "dictCode": "SUB_TYPE",
-      "dictName": "账户科目",
-      "status": 1,
-      "remark": "余额所属科目（3 个个人科目 + 3 个公共科目）",
-      "itemCount": 7
-     },
-     {
-      "dictId": 23,
-      "dictCode": "TRANS_OUTBOX_STATUS",
-      "dictName": "跨机构抛账单状态",
-      "status": 1,
-      "remark": "M8-4 只到待发送；已发送/已回盘/失败留给以后接对手方",
-      "itemCount": 5
-     },
-     {
-      "dictId": 4,
-      "dictCode": "VEST_MODE",
-      "dictName": "归属模式",
-      "status": 1,
-      "remark": "1 按余额归属（渐进式）2 按全额归属",
-      "itemCount": 2
-     }
-    ],
-    "traceId": "a64f285ccf0d4c31",
-    "errors": null
-   }
-  },
-  {
-   "route": "dict",
-   "method": "GET",
-   "path": "/api/dicts/ACCT_TRANSFER_TYPE/items",
-   "query": "",
-   "body": null,
-   "status": 200,
-   "json": {
-    "code": "0",
-    "message": "ok",
-    "data": [
-     {
-      "itemId": 132,
-      "dictCode": "ACCT_TRANSFER_TYPE",
-      "itemCode": "1",
-      "itemName": "公共转个人",
-      "sortNo": 10,
-      "status": 1,
-      "extra": null,
-      "version": 0
-     },
-     {
-      "itemId": 133,
-      "dictCode": "ACCT_TRANSFER_TYPE",
-      "itemCode": "2",
-      "itemName": "个人转公共",
-      "sortNo": 20,
-      "status": 1,
-      "extra": null,
-      "version": 0
-     },
-     {
-      "itemId": 134,
-      "dictCode": "ACCT_TRANSFER_TYPE",
-      "itemCode": "3",
-      "itemName": "企业取款",
-      "sortNo": 30,
-      "status": 1,
-      "extra": null,
-      "version": 0
-     }
-    ],
-    "traceId": "180056c929e74909",
-    "errors": null
-   }
-  },
-  {
    "route": "selfcheck",
    "method": "GET",
    "path": "/api/selfcheck",
@@ -16647,8 +16289,3531 @@
     "traceId": "4d09ca4720194e81",
     "errors": null
    }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/ACCT_TRANSFER_TYPE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "ACCT_TRANSFER_TYPE",
+      "itemName": "公共转个人",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "ACCT_TRANSFER_TYPE",
+      "itemName": "个人转公共",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "ACCT_TRANSFER_TYPE",
+      "itemName": "企业取款",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/ACCT_TRANSFER_TYPE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "ACCT_TRANSFER_TYPE",
+      "itemName": "公共转个人",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "ACCT_TRANSFER_TYPE",
+      "itemName": "个人转公共",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "ACCT_TRANSFER_TYPE",
+      "itemName": "企业取款",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/BANK_FLOW_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "0",
+      "dictCode": "BANK_FLOW_STATUS",
+      "itemName": "未匹配",
+      "sortNo": 0,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "1",
+      "dictCode": "BANK_FLOW_STATUS",
+      "itemName": "已匹配",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "BANK_FLOW_STATUS",
+      "itemName": "已撤销",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/BANK_FLOW_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "0",
+      "dictCode": "BANK_FLOW_STATUS",
+      "itemName": "未匹配",
+      "sortNo": 0,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "1",
+      "dictCode": "BANK_FLOW_STATUS",
+      "itemName": "已匹配",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "BANK_FLOW_STATUS",
+      "itemName": "已撤销",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/BANK_MATCH_MODE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "BANK_MATCH_MODE",
+      "itemName": "自动匹配",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "BANK_MATCH_MODE",
+      "itemName": "手工匹配",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/BANK_MATCH_MODE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "BANK_MATCH_MODE",
+      "itemName": "自动匹配",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "BANK_MATCH_MODE",
+      "itemName": "手工匹配",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/BATCH_JOB_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "BATCH_JOB_STATUS",
+      "itemName": "待运行",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "BATCH_JOB_STATUS",
+      "itemName": "运行中",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "BATCH_JOB_STATUS",
+      "itemName": "成功",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "BATCH_JOB_STATUS",
+      "itemName": "部分失败",
+      "sortNo": 40,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "BATCH_JOB_STATUS",
+      "itemName": "已中止",
+      "sortNo": 50,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     },
+     {
+      "itemCode": "6",
+      "dictCode": "BATCH_JOB_STATUS",
+      "itemName": "部分成功",
+      "sortNo": 60,
+      "status": 1,
+      "extra": null,
+      "itemId": 6
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/BATCH_JOB_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "BATCH_JOB_STATUS",
+      "itemName": "待运行",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "BATCH_JOB_STATUS",
+      "itemName": "运行中",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "BATCH_JOB_STATUS",
+      "itemName": "成功",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "BATCH_JOB_STATUS",
+      "itemName": "部分失败",
+      "sortNo": 40,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "BATCH_JOB_STATUS",
+      "itemName": "已中止",
+      "sortNo": 50,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     },
+     {
+      "itemCode": "6",
+      "dictCode": "BATCH_JOB_STATUS",
+      "itemName": "部分成功",
+      "sortNo": 60,
+      "status": 1,
+      "extra": null,
+      "itemId": 6
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/BATCH_STEP_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "BATCH_STEP_STATUS",
+      "itemName": "待运行",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "BATCH_STEP_STATUS",
+      "itemName": "运行中",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "BATCH_STEP_STATUS",
+      "itemName": "成功",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "BATCH_STEP_STATUS",
+      "itemName": "失败",
+      "sortNo": 40,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "BATCH_STEP_STATUS",
+      "itemName": "跳过",
+      "sortNo": 50,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     },
+     {
+      "itemCode": "6",
+      "dictCode": "BATCH_STEP_STATUS",
+      "itemName": "部分成功",
+      "sortNo": 60,
+      "status": 1,
+      "extra": null,
+      "itemId": 6
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/BATCH_STEP_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "BATCH_STEP_STATUS",
+      "itemName": "待运行",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "BATCH_STEP_STATUS",
+      "itemName": "运行中",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "BATCH_STEP_STATUS",
+      "itemName": "成功",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "BATCH_STEP_STATUS",
+      "itemName": "失败",
+      "sortNo": 40,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "BATCH_STEP_STATUS",
+      "itemName": "跳过",
+      "sortNo": 50,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     },
+     {
+      "itemCode": "6",
+      "dictCode": "BATCH_STEP_STATUS",
+      "itemName": "部分成功",
+      "sortNo": 60,
+      "status": 1,
+      "extra": null,
+      "itemId": 6
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/BATCH_TRIGGER",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "BATCH_TRIGGER",
+      "itemName": "定时",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "BATCH_TRIGGER",
+      "itemName": "手工",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/BATCH_TRIGGER/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "BATCH_TRIGGER",
+      "itemName": "定时",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "BATCH_TRIGGER",
+      "itemName": "手工",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/BIZ_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "BIZ_STATUS",
+      "itemName": "草稿",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "BIZ_STATUS",
+      "itemName": "审批中",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "BIZ_STATUS",
+      "itemName": "已生效",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "BIZ_STATUS",
+      "itemName": "已否决",
+      "sortNo": 40,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "BIZ_STATUS",
+      "itemName": "已作废",
+      "sortNo": 50,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/BIZ_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "BIZ_STATUS",
+      "itemName": "草稿",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "BIZ_STATUS",
+      "itemName": "审批中",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "BIZ_STATUS",
+      "itemName": "已生效",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "BIZ_STATUS",
+      "itemName": "已否决",
+      "sortNo": 40,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "BIZ_STATUS",
+      "itemName": "已作废",
+      "sortNo": 50,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/CYCLE_TYPE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "CYCLE_TYPE",
+      "itemName": "年",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "CYCLE_TYPE",
+      "itemName": "半年",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "CYCLE_TYPE",
+      "itemName": "季",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "CYCLE_TYPE",
+      "itemName": "月",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "9",
+      "dictCode": "CYCLE_TYPE",
+      "itemName": "不定期",
+      "sortNo": 9,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/CYCLE_TYPE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "CYCLE_TYPE",
+      "itemName": "年",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "CYCLE_TYPE",
+      "itemName": "半年",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "CYCLE_TYPE",
+      "itemName": "季",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "CYCLE_TYPE",
+      "itemName": "月",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "9",
+      "dictCode": "CYCLE_TYPE",
+      "itemName": "不定期",
+      "sortNo": 9,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/DAY_TYPE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "DAY_TYPE",
+      "itemName": "工作日",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "DAY_TYPE",
+      "itemName": "周末",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "DAY_TYPE",
+      "itemName": "法定节假日",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/DAY_TYPE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "DAY_TYPE",
+      "itemName": "工作日",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "DAY_TYPE",
+      "itemName": "周末",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "DAY_TYPE",
+      "itemName": "法定节假日",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/ENT_PLAN_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "ENT_PLAN_STATUS",
+      "itemName": "未生效",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "ENT_PLAN_STATUS",
+      "itemName": "生效",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "ENT_PLAN_STATUS",
+      "itemName": "转出中",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "ENT_PLAN_STATUS",
+      "itemName": "已转出",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "ENT_PLAN_STATUS",
+      "itemName": "终止",
+      "sortNo": 5,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     },
+     {
+      "itemCode": "6",
+      "dictCode": "ENT_PLAN_STATUS",
+      "itemName": "变更中",
+      "sortNo": 6,
+      "status": 1,
+      "extra": null,
+      "itemId": 6
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/ENT_PLAN_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "ENT_PLAN_STATUS",
+      "itemName": "未生效",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "ENT_PLAN_STATUS",
+      "itemName": "生效",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "ENT_PLAN_STATUS",
+      "itemName": "转出中",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "ENT_PLAN_STATUS",
+      "itemName": "已转出",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "ENT_PLAN_STATUS",
+      "itemName": "终止",
+      "sortNo": 5,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     },
+     {
+      "itemCode": "6",
+      "dictCode": "ENT_PLAN_STATUS",
+      "itemName": "变更中",
+      "sortNo": 6,
+      "status": 1,
+      "extra": null,
+      "itemId": 6
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/ENT_PLAN_TYPE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "ENT_PLAN_TYPE",
+      "itemName": "正常",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "ENT_PLAN_TYPE",
+      "itemName": "保留",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "ENT_PLAN_TYPE",
+      "itemName": "统筹",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/ENT_PLAN_TYPE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "ENT_PLAN_TYPE",
+      "itemName": "正常",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "ENT_PLAN_TYPE",
+      "itemName": "保留",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "ENT_PLAN_TYPE",
+      "itemName": "统筹",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/FUND_TRANSFER_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "FUND_TRANSFER_STATUS",
+      "itemName": "未发送",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "FUND_TRANSFER_STATUS",
+      "itemName": "无需发送",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "FUND_TRANSFER_STATUS",
+      "itemName": "已作废",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "FUND_TRANSFER_STATUS",
+      "itemName": "已发送",
+      "sortNo": 40,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "FUND_TRANSFER_STATUS",
+      "itemName": "发送失败",
+      "sortNo": 50,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/FUND_TRANSFER_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "FUND_TRANSFER_STATUS",
+      "itemName": "未发送",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "FUND_TRANSFER_STATUS",
+      "itemName": "无需发送",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "FUND_TRANSFER_STATUS",
+      "itemName": "已作废",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "FUND_TRANSFER_STATUS",
+      "itemName": "已发送",
+      "sortNo": 40,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "FUND_TRANSFER_STATUS",
+      "itemName": "发送失败",
+      "sortNo": 50,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/FUND_TRANSFER_TYPE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "FUND_TRANSFER_TYPE",
+      "itemName": "账管费上划",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "FUND_TRANSFER_TYPE",
+      "itemName": "企业取款",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/FUND_TRANSFER_TYPE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "FUND_TRANSFER_TYPE",
+      "itemName": "账管费上划",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "FUND_TRANSFER_TYPE",
+      "itemName": "企业取款",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/OVERPAY_MODE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "OVERPAY_MODE",
+      "itemName": "人工干预",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "OVERPAY_MODE",
+      "itemName": "暂存投资",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "OVERPAY_MODE",
+      "itemName": "暂存不投资",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "OVERPAY_MODE",
+      "itemName": "全额退回",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/OVERPAY_MODE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "OVERPAY_MODE",
+      "itemName": "人工干预",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "OVERPAY_MODE",
+      "itemName": "暂存投资",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "OVERPAY_MODE",
+      "itemName": "暂存不投资",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "OVERPAY_MODE",
+      "itemName": "全额退回",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PAY_APPLY_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_APPLY_STATUS",
+      "itemName": "未生效",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_APPLY_STATUS",
+      "itemName": "生效",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_APPLY_STATUS",
+      "itemName": "微调中",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "PAY_APPLY_STATUS",
+      "itemName": "作废",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PAY_APPLY_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_APPLY_STATUS",
+      "itemName": "未生效",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_APPLY_STATUS",
+      "itemName": "生效",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_APPLY_STATUS",
+      "itemName": "微调中",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "PAY_APPLY_STATUS",
+      "itemName": "作废",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PAY_BILL_TYPE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_BILL_TYPE",
+      "itemName": "规则缴费",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_BILL_TYPE",
+      "itemName": "直接缴费",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_BILL_TYPE",
+      "itemName": "企业缴费",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PAY_BILL_TYPE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_BILL_TYPE",
+      "itemName": "规则缴费",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_BILL_TYPE",
+      "itemName": "直接缴费",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_BILL_TYPE",
+      "itemName": "企业缴费",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PAY_INSTALL_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_INSTALL_STATUS",
+      "itemName": "待付",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_INSTALL_STATUS",
+      "itemName": "已付",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_INSTALL_STATUS",
+      "itemName": "已作废",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PAY_INSTALL_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_INSTALL_STATUS",
+      "itemName": "待付",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_INSTALL_STATUS",
+      "itemName": "已付",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_INSTALL_STATUS",
+      "itemName": "已作废",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PAY_MATCH_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "0",
+      "dictCode": "PAY_MATCH_STATUS",
+      "itemName": "未匹配",
+      "sortNo": 0,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_MATCH_STATUS",
+      "itemName": "已匹配",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_MATCH_STATUS",
+      "itemName": "已撤销",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_MATCH_STATUS",
+      "itemName": "人工匹配经办",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "PAY_MATCH_STATUS",
+      "itemName": "人工匹配复核",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PAY_MATCH_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "0",
+      "dictCode": "PAY_MATCH_STATUS",
+      "itemName": "未匹配",
+      "sortNo": 0,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_MATCH_STATUS",
+      "itemName": "已匹配",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_MATCH_STATUS",
+      "itemName": "已撤销",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_MATCH_STATUS",
+      "itemName": "人工匹配经办",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "PAY_MATCH_STATUS",
+      "itemName": "人工匹配复核",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PAY_MODE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_MODE",
+      "itemName": "一次性",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_MODE",
+      "itemName": "分期",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_MODE",
+      "itemName": "保留账户支取",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PAY_MODE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_MODE",
+      "itemName": "一次性",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_MODE",
+      "itemName": "分期",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_MODE",
+      "itemName": "保留账户支取",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PAY_PERSON_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_PERSON_STATUS",
+      "itemName": "正常缴费",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_PERSON_STATUS",
+      "itemName": "暂停缴费",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PAY_PERSON_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_PERSON_STATUS",
+      "itemName": "正常缴费",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_PERSON_STATUS",
+      "itemName": "暂停缴费",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PAY_REASON",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_REASON",
+      "itemName": "离职",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_REASON",
+      "itemName": "退休",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_REASON",
+      "itemName": "身故",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "PAY_REASON",
+      "itemName": "保留账户",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "PAY_REASON",
+      "itemName": "在职",
+      "sortNo": 50,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PAY_REASON/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_REASON",
+      "itemName": "离职",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_REASON",
+      "itemName": "退休",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_REASON",
+      "itemName": "身故",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "PAY_REASON",
+      "itemName": "保留账户",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "PAY_REASON",
+      "itemName": "在职",
+      "sortNo": 50,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PAY_REQ_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_REQ_STATUS",
+      "itemName": "待测算",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_REQ_STATUS",
+      "itemName": "待复核",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_REQ_STATUS",
+      "itemName": "已确认",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "PAY_REQ_STATUS",
+      "itemName": "已作废",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "PAY_REQ_STATUS",
+      "itemName": "已支付",
+      "sortNo": 5,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PAY_REQ_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_REQ_STATUS",
+      "itemName": "待测算",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_REQ_STATUS",
+      "itemName": "待复核",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_REQ_STATUS",
+      "itemName": "已确认",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "PAY_REQ_STATUS",
+      "itemName": "已作废",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "PAY_REQ_STATUS",
+      "itemName": "已支付",
+      "sortNo": 5,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PAY_TAX_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "0",
+      "dictCode": "PAY_TAX_STATUS",
+      "itemName": "不扣税",
+      "sortNo": 0,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_TAX_STATUS",
+      "itemName": "待扣税",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_TAX_STATUS",
+      "itemName": "扣税中",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_TAX_STATUS",
+      "itemName": "已扣税",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PAY_TAX_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "0",
+      "dictCode": "PAY_TAX_STATUS",
+      "itemName": "不扣税",
+      "sortNo": 0,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_TAX_STATUS",
+      "itemName": "待扣税",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_TAX_STATUS",
+      "itemName": "扣税中",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_TAX_STATUS",
+      "itemName": "已扣税",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PAY_TYPE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_TYPE",
+      "itemName": "直接缴费",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_TYPE",
+      "itemName": "规则缴费",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PAY_TYPE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_TYPE",
+      "itemName": "直接缴费",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_TYPE",
+      "itemName": "规则缴费",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PAY_TYPE_REQ",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_TYPE_REQ",
+      "itemName": "正常支付",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_TYPE_REQ",
+      "itemName": "在职支付",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_TYPE_REQ",
+      "itemName": "提前支付",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PAY_TYPE_REQ/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PAY_TYPE_REQ",
+      "itemName": "正常支付",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PAY_TYPE_REQ",
+      "itemName": "在职支付",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PAY_TYPE_REQ",
+      "itemName": "提前支付",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PERSON_PLAN_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "待复核",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "正常",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "支付中",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "支付终止",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "转出中",
+      "sortNo": 5,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     },
+     {
+      "itemCode": "6",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "转出终止",
+      "sortNo": 6,
+      "status": 1,
+      "extra": null,
+      "itemId": 6
+     },
+     {
+      "itemCode": "7",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "保留",
+      "sortNo": 7,
+      "status": 1,
+      "extra": null,
+      "itemId": 7
+     },
+     {
+      "itemCode": "8",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "注销",
+      "sortNo": 8,
+      "status": 1,
+      "extra": null,
+      "itemId": 8
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PERSON_PLAN_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "待复核",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "正常",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "支付中",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "支付终止",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "转出中",
+      "sortNo": 5,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     },
+     {
+      "itemCode": "6",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "转出终止",
+      "sortNo": 6,
+      "status": 1,
+      "extra": null,
+      "itemId": 6
+     },
+     {
+      "itemCode": "7",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "保留",
+      "sortNo": 7,
+      "status": 1,
+      "extra": null,
+      "itemId": 7
+     },
+     {
+      "itemCode": "8",
+      "dictCode": "PERSON_PLAN_STATUS",
+      "itemName": "注销",
+      "sortNo": 8,
+      "status": 1,
+      "extra": null,
+      "itemId": 8
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PLAN_CATEGORY",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PLAN_CATEGORY",
+      "itemName": "雇员计划",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PLAN_CATEGORY",
+      "itemName": "保留计划",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PLAN_CATEGORY/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PLAN_CATEGORY",
+      "itemName": "雇员计划",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PLAN_CATEGORY",
+      "itemName": "保留计划",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PLAN_TYPE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PLAN_TYPE",
+      "itemName": "集合资金信托",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PLAN_TYPE",
+      "itemName": "单一资金信托",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "9",
+      "dictCode": "PLAN_TYPE",
+      "itemName": "年金计划",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PLAN_TYPE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PLAN_TYPE",
+      "itemName": "集合资金信托",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PLAN_TYPE",
+      "itemName": "单一资金信托",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "9",
+      "dictCode": "PLAN_TYPE",
+      "itemName": "年金计划",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PORTFOLIO_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PORTFOLIO_STATUS",
+      "itemName": "未生效",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PORTFOLIO_STATUS",
+      "itemName": "已生效",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PORTFOLIO_STATUS",
+      "itemName": "已停用",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PORTFOLIO_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PORTFOLIO_STATUS",
+      "itemName": "未生效",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PORTFOLIO_STATUS",
+      "itemName": "已生效",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "PORTFOLIO_STATUS",
+      "itemName": "已停用",
+      "sortNo": 30,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/PORTFOLIO_TYPE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PORTFOLIO_TYPE",
+      "itemName": "一级组合",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PORTFOLIO_TYPE",
+      "itemName": "二级组合",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/PORTFOLIO_TYPE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "PORTFOLIO_TYPE",
+      "itemName": "一级组合",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "PORTFOLIO_TYPE",
+      "itemName": "二级组合",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/SEAL_BIZ_TYPE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "SEAL_BIZ_TYPE",
+      "itemName": "离职",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "SEAL_BIZ_TYPE",
+      "itemName": "支付",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/SEAL_BIZ_TYPE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "SEAL_BIZ_TYPE",
+      "itemName": "离职",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "SEAL_BIZ_TYPE",
+      "itemName": "支付",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/SEAL_OWNER_TYPE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "SEAL_OWNER_TYPE",
+      "itemName": "企业客户",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "SEAL_OWNER_TYPE",
+      "itemName": "信托计划",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/SEAL_OWNER_TYPE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "SEAL_OWNER_TYPE",
+      "itemName": "企业客户",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "SEAL_OWNER_TYPE",
+      "itemName": "信托计划",
+      "sortNo": 20,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/SUB_TYPE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "SUB_TYPE",
+      "itemName": "个人缴费",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "SUB_TYPE",
+      "itemName": "企业缴费-未归属",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "SUB_TYPE",
+      "itemName": "企业缴费-已归属",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "SUB_TYPE",
+      "itemName": "企业公共-未归属",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "SUB_TYPE",
+      "itemName": "企业公共-超缴",
+      "sortNo": 5,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     },
+     {
+      "itemCode": "6",
+      "dictCode": "SUB_TYPE",
+      "itemName": "企业公共-税收待分配",
+      "sortNo": 6,
+      "status": 1,
+      "extra": null,
+      "itemId": 6
+     },
+     {
+      "itemCode": "7",
+      "dictCode": "SUB_TYPE",
+      "itemName": "投资收益",
+      "sortNo": 70,
+      "status": 1,
+      "extra": null,
+      "itemId": 7
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/SUB_TYPE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "SUB_TYPE",
+      "itemName": "个人缴费",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "SUB_TYPE",
+      "itemName": "企业缴费-未归属",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "SUB_TYPE",
+      "itemName": "企业缴费-已归属",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "SUB_TYPE",
+      "itemName": "企业公共-未归属",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "SUB_TYPE",
+      "itemName": "企业公共-超缴",
+      "sortNo": 5,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     },
+     {
+      "itemCode": "6",
+      "dictCode": "SUB_TYPE",
+      "itemName": "企业公共-税收待分配",
+      "sortNo": 6,
+      "status": 1,
+      "extra": null,
+      "itemId": 6
+     },
+     {
+      "itemCode": "7",
+      "dictCode": "SUB_TYPE",
+      "itemName": "投资收益",
+      "sortNo": 70,
+      "status": 1,
+      "extra": null,
+      "itemId": 7
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/SYS_CONFIG",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "CURRENT_BIZ_DATE",
+      "dictCode": "SYS_CONFIG",
+      "itemName": "系统当前业务日",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/SYS_CONFIG/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "CURRENT_BIZ_DATE",
+      "dictCode": "SYS_CONFIG",
+      "itemName": "系统当前业务日",
+      "sortNo": 10,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/TRANS_OUTBOX_STATUS",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "TRANS_OUTBOX_STATUS",
+      "itemName": "待发送",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "TRANS_OUTBOX_STATUS",
+      "itemName": "已发送",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "TRANS_OUTBOX_STATUS",
+      "itemName": "已回盘",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "TRANS_OUTBOX_STATUS",
+      "itemName": "已撤销",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "TRANS_OUTBOX_STATUS",
+      "itemName": "失败",
+      "sortNo": 5,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/TRANS_OUTBOX_STATUS/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "TRANS_OUTBOX_STATUS",
+      "itemName": "待发送",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "TRANS_OUTBOX_STATUS",
+      "itemName": "已发送",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     },
+     {
+      "itemCode": "3",
+      "dictCode": "TRANS_OUTBOX_STATUS",
+      "itemName": "已回盘",
+      "sortNo": 3,
+      "status": 1,
+      "extra": null,
+      "itemId": 3
+     },
+     {
+      "itemCode": "4",
+      "dictCode": "TRANS_OUTBOX_STATUS",
+      "itemName": "已撤销",
+      "sortNo": 4,
+      "status": 1,
+      "extra": null,
+      "itemId": 4
+     },
+     {
+      "itemCode": "5",
+      "dictCode": "TRANS_OUTBOX_STATUS",
+      "itemName": "失败",
+      "sortNo": 5,
+      "status": 1,
+      "extra": null,
+      "itemId": 5
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dict/VEST_MODE",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "VEST_MODE",
+      "itemName": "按余额归属",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "VEST_MODE",
+      "itemName": "按全额归属",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts/VEST_MODE/items",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "itemCode": "1",
+      "dictCode": "VEST_MODE",
+      "itemName": "按余额归属",
+      "sortNo": 1,
+      "status": 1,
+      "extra": null,
+      "itemId": 1
+     },
+     {
+      "itemCode": "2",
+      "dictCode": "VEST_MODE",
+      "itemName": "按全额归属",
+      "sortNo": 2,
+      "status": 1,
+      "extra": null,
+      "itemId": 2
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
+  },
+  {
+   "method": "GET",
+   "path": "/api/dicts",
+   "route": "dict",
+   "json": {
+    "code": "0",
+    "message": "ok",
+    "data": [
+     {
+      "dictCode": "ACCT_TRANSFER_TYPE",
+      "dictName": "ACCT_TRANSFER_TYPE",
+      "itemCount": 3,
+      "status": 1
+     },
+     {
+      "dictCode": "BANK_FLOW_STATUS",
+      "dictName": "BANK_FLOW_STATUS",
+      "itemCount": 3,
+      "status": 1
+     },
+     {
+      "dictCode": "BANK_MATCH_MODE",
+      "dictName": "BANK_MATCH_MODE",
+      "itemCount": 2,
+      "status": 1
+     },
+     {
+      "dictCode": "BATCH_JOB_STATUS",
+      "dictName": "BATCH_JOB_STATUS",
+      "itemCount": 6,
+      "status": 1
+     },
+     {
+      "dictCode": "BATCH_STEP_STATUS",
+      "dictName": "BATCH_STEP_STATUS",
+      "itemCount": 6,
+      "status": 1
+     },
+     {
+      "dictCode": "BATCH_TRIGGER",
+      "dictName": "BATCH_TRIGGER",
+      "itemCount": 2,
+      "status": 1
+     },
+     {
+      "dictCode": "BIZ_STATUS",
+      "dictName": "BIZ_STATUS",
+      "itemCount": 5,
+      "status": 1
+     },
+     {
+      "dictCode": "CYCLE_TYPE",
+      "dictName": "CYCLE_TYPE",
+      "itemCount": 5,
+      "status": 1
+     },
+     {
+      "dictCode": "DAY_TYPE",
+      "dictName": "DAY_TYPE",
+      "itemCount": 3,
+      "status": 1
+     },
+     {
+      "dictCode": "ENT_PLAN_STATUS",
+      "dictName": "ENT_PLAN_STATUS",
+      "itemCount": 6,
+      "status": 1
+     },
+     {
+      "dictCode": "ENT_PLAN_TYPE",
+      "dictName": "ENT_PLAN_TYPE",
+      "itemCount": 3,
+      "status": 1
+     },
+     {
+      "dictCode": "FUND_TRANSFER_STATUS",
+      "dictName": "FUND_TRANSFER_STATUS",
+      "itemCount": 5,
+      "status": 1
+     },
+     {
+      "dictCode": "FUND_TRANSFER_TYPE",
+      "dictName": "FUND_TRANSFER_TYPE",
+      "itemCount": 2,
+      "status": 1
+     },
+     {
+      "dictCode": "OVERPAY_MODE",
+      "dictName": "OVERPAY_MODE",
+      "itemCount": 4,
+      "status": 1
+     },
+     {
+      "dictCode": "PAY_APPLY_STATUS",
+      "dictName": "PAY_APPLY_STATUS",
+      "itemCount": 4,
+      "status": 1
+     },
+     {
+      "dictCode": "PAY_BILL_TYPE",
+      "dictName": "PAY_BILL_TYPE",
+      "itemCount": 3,
+      "status": 1
+     },
+     {
+      "dictCode": "PAY_INSTALL_STATUS",
+      "dictName": "PAY_INSTALL_STATUS",
+      "itemCount": 3,
+      "status": 1
+     },
+     {
+      "dictCode": "PAY_MATCH_STATUS",
+      "dictName": "PAY_MATCH_STATUS",
+      "itemCount": 5,
+      "status": 1
+     },
+     {
+      "dictCode": "PAY_MODE",
+      "dictName": "PAY_MODE",
+      "itemCount": 3,
+      "status": 1
+     },
+     {
+      "dictCode": "PAY_PERSON_STATUS",
+      "dictName": "PAY_PERSON_STATUS",
+      "itemCount": 2,
+      "status": 1
+     },
+     {
+      "dictCode": "PAY_REASON",
+      "dictName": "PAY_REASON",
+      "itemCount": 5,
+      "status": 1
+     },
+     {
+      "dictCode": "PAY_REQ_STATUS",
+      "dictName": "PAY_REQ_STATUS",
+      "itemCount": 5,
+      "status": 1
+     },
+     {
+      "dictCode": "PAY_TAX_STATUS",
+      "dictName": "PAY_TAX_STATUS",
+      "itemCount": 4,
+      "status": 1
+     },
+     {
+      "dictCode": "PAY_TYPE",
+      "dictName": "PAY_TYPE",
+      "itemCount": 2,
+      "status": 1
+     },
+     {
+      "dictCode": "PAY_TYPE_REQ",
+      "dictName": "PAY_TYPE_REQ",
+      "itemCount": 3,
+      "status": 1
+     },
+     {
+      "dictCode": "PERSON_PLAN_STATUS",
+      "dictName": "PERSON_PLAN_STATUS",
+      "itemCount": 8,
+      "status": 1
+     },
+     {
+      "dictCode": "PLAN_CATEGORY",
+      "dictName": "PLAN_CATEGORY",
+      "itemCount": 2,
+      "status": 1
+     },
+     {
+      "dictCode": "PLAN_TYPE",
+      "dictName": "PLAN_TYPE",
+      "itemCount": 3,
+      "status": 1
+     },
+     {
+      "dictCode": "PORTFOLIO_STATUS",
+      "dictName": "PORTFOLIO_STATUS",
+      "itemCount": 3,
+      "status": 1
+     },
+     {
+      "dictCode": "PORTFOLIO_TYPE",
+      "dictName": "PORTFOLIO_TYPE",
+      "itemCount": 2,
+      "status": 1
+     },
+     {
+      "dictCode": "SEAL_BIZ_TYPE",
+      "dictName": "SEAL_BIZ_TYPE",
+      "itemCount": 2,
+      "status": 1
+     },
+     {
+      "dictCode": "SEAL_OWNER_TYPE",
+      "dictName": "SEAL_OWNER_TYPE",
+      "itemCount": 2,
+      "status": 1
+     },
+     {
+      "dictCode": "SUB_TYPE",
+      "dictName": "SUB_TYPE",
+      "itemCount": 7,
+      "status": 1
+     },
+     {
+      "dictCode": "SYS_CONFIG",
+      "dictName": "SYS_CONFIG",
+      "itemCount": 1,
+      "status": 1
+     },
+     {
+      "dictCode": "TRANS_OUTBOX_STATUS",
+      "dictName": "TRANS_OUTBOX_STATUS",
+      "itemCount": 5,
+      "status": 1
+     },
+     {
+      "dictCode": "VEST_MODE",
+      "dictName": "VEST_MODE",
+      "itemCount": 2,
+      "status": 1
+     }
+    ],
+    "traceId": "demo-dict",
+    "errors": null
+   }
   }
  ],
- "scrubbedAt": "2026-11-18T13:33:08.568Z",
+ "scrubbedAt": "2026-11-19T09:11:20.155Z",
  "scrubHits": 0
 }

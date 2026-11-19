@@ -46,15 +46,21 @@
       '  .aside{position:fixed!important;left:0;top:0;bottom:0;z-index:60;transform:translateX(-100%);transition:transform .18s ease;box-shadow:2px 0 12px rgba(0,0,0,.35)}',
       '  body.__menu-open .aside{transform:none}',
       '  .el-main{padding:10px!important;overflow-x:auto}',
+      '  .header .el-breadcrumb{display:none!important}',
+      '  .header .header-right .el-tag{display:none!important}',
       '  .el-table{font-size:12px}',
       '  .cardmode .el-table{display:block;background:transparent;font-size:13px}',
       '  .cardmode .el-table__header-wrapper{display:none}',
       '  .cardmode .el-table__body-wrapper,.cardmode .el-table__body,.cardmode .el-table__body tbody{display:block;width:100%!important;overflow:visible!important}',
-      '  .cardmode .el-table__body tbody tr{display:block;background:#fff;border:1px solid #e6ebf2;border-radius:12px;margin:0 0 10px;padding:10px 12px}',
+      '  .cardmode .el-table,.cardmode .el-table__inner-wrapper{width:100%!important;display:block}',
+      '  .cardmode .el-scrollbar__wrap{overflow-x:hidden!important}',
+      '  .cardmode .el-scrollbar__view{display:block!important;width:100%!important}',
+      '  .cardmode .el-card__body{padding:10px!important}',
+      '  .cardmode .el-table__body tbody tr{display:block;width:100%!important;box-sizing:border-box;background:#fff;border:1px solid #e6ebf2;border-radius:12px;margin:0 0 10px;padding:10px 12px}',
       '  .cardmode .el-table__body tbody tr:hover>td{background:transparent}',
       '  .cardmode .el-table__body tbody td{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border:0!important;padding:3px 0;line-height:1.55;width:auto!important;background:transparent!important}',
-      '  .cardmode .el-table__body tbody td::before{content:attr(data-label);color:#8a94a6;font-size:12px;flex:0 0 88px;text-align:left}',
-      '  .cardmode .el-table__body tbody td .cell{padding:0;word-break:break-word;text-align:right}',
+      '  .cardmode .el-table__body tbody td::before{content:attr(data-label);color:#8a94a6;font-size:12px;flex:0 0 76px;text-align:left}',
+      '  .cardmode .el-table__body tbody td .cell{padding:0;flex:1 1 auto;min-width:0;word-break:break-word;text-align:right}',
       '  .cardmode .el-table__body tbody td.is-first{display:block;padding:0 0 6px;border-bottom:1px dashed #eef1f6!important;margin-bottom:6px}',
       '  .cardmode .el-table__body tbody td.is-first::before{display:none}',
       '  .cardmode .el-table__body tbody td.is-first .cell{text-align:left;font-weight:600;font-size:14px}',
@@ -85,6 +91,16 @@
     b.id = '__menu_btn'
     b.textContent = '菜单'
     b.onclick = function () { document.body.classList.toggle('__menu-open') }
+    // 应用自带的左上角折叠按钮在窄屏只会把侧栏收成 64px，看着像失灵；窄屏下让它开抽屉
+    document.addEventListener('click', function (e) {
+      if (window.innerWidth > 899) return
+      var t = e.target
+      if (t && t.closest && t.closest('.collapse-btn')) {
+        e.preventDefault()
+        e.stopPropagation()
+        document.body.classList.toggle('__menu-open')
+      }
+    }, true)
     document.body.appendChild(b)
     document.addEventListener('click', function (e) {
       if (!document.body.classList.contains('__menu-open')) return
@@ -300,6 +316,12 @@
       'background:rgba(24,44,66,.82)', 'color:#cfe6ff', 'pointer-events:none',
       'font-family:system-ui,-apple-system,"Segoe UI",sans-serif'
     ].join(';')
+    if (window.innerWidth <= 899) {
+      d.style.fontSize = '11px'
+      d.style.padding = '3px 8px'
+      d.style.opacity = '0.72'
+      d.style.bottom = 'calc(8px + env(safe-area-inset-bottom))'
+    }
     document.addEventListener('DOMContentLoaded', function () {
       document.body.appendChild(d)
     })
